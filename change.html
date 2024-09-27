@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  
+  <style>
+    body {
+      transition: background-color 0.5s ease;
+    }
+    
+    
+  </style>
+</head>
+
+<body>
+  
+  <h1>Select any color you want</h1>
+  
+  <select  id="colorSelect" onchange="changeBackgroundColor()">
+  <option value="">Select Color</option>
+  <option value="red">🔴</option>
+  <option value="blue">🔵</option>
+  <option value="green">🟢</option>
+  <option value="yellow">🟡</option>
+  <option value="orange">🟠</option>
+  <option value="purple">🟣</option>
+  <option value="brown">🟤</option>
+  <option value="black">⚫</option>
+  <option value="white">⚪</option>
+  
+  </select>
+  
+  <script>
+    
+    function changeBackgroundColor(){
+      
+      var color= document.getElementById
+      ("colorSelect").value; 
+      
+      document.body.style.backgroundColor=
+      color; 
+      
+    }
+    
+  </script>
+</body>
+</html>
